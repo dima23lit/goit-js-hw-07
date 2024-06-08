@@ -10,8 +10,8 @@ function handlerGetComment(event) {
         alert('All form fields must be filled in')
     } else {
         const data = {
-            email: email,
-            password: password
+            email: email.value,
+            password: password.value
         }
         console.log(data);
         }
