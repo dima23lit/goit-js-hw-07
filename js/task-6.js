@@ -30,7 +30,7 @@ function destroyButton() {
 function createBoxes(amount) {
   let hw = 30;
   let arrayOfBox = [];
-  for (let i = 0; i <= amount; i++) {
+  for (let i = 0; i < amount; i++) {
     hw += 10 * i;
     let div = `<div class="remove" style="display: block; margin-top: 20px; margin-bottom: 20px; margin-right: 20px; background-color: ${getRandomHexColor()}; width: ${hw}px; height: ${hw}px;"></div>`
     arrayOfBox.push(div)
