@@ -6,7 +6,6 @@ destroyBtn.dataset.action = "destroy";
 const onInput = controls.firstElementChild
 const boxes = document.querySelector("#boxes")
 
-
 createBtn.addEventListener("click", createButton)
 destroyBtn.addEventListener("click", destroyButton)
 
@@ -31,9 +30,10 @@ function createBoxes(amount) {
   let hw = 30;
   let arrayOfBox = [];
   for (let i = 0; i < amount; i++) {
-    hw += 10 * i;
     let div = `<div class="remove" style="display: block; margin-top: 20px; margin-bottom: 20px; margin-right: 20px; background-color: ${getRandomHexColor()}; width: ${hw}px; height: ${hw}px;"></div>`
+    hw += 10;
     arrayOfBox.push(div)
+    destroyButton()
   }
   boxes.insertAdjacentHTML("afterbegin", arrayOfBox.join(""))
 }
