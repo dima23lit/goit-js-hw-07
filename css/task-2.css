@@ -1,0 +1,15 @@
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.list-item {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+.nature {
+  width: 400px;
+  height: 225px;
+}
